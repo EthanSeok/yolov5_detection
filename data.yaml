@@ -1,0 +1,7 @@
+names:
+- green tomato
+- red tomato
+- tomato blossom-end rot
+nc: 3
+train: /content/gdrive/MyDrive/Colab_Notebooks/dataset/train.txt
+val: /content/gdrive/MyDrive/Colab_Notebooks/dataset/val.txt
