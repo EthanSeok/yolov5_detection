@@ -7,8 +7,44 @@ yolo v5를 이용하여 토마토 및 파프리카의 완숙도 선별 모델을
 
 다음은 각 모델 테스트별 결과를 정리한 것이다.
 
-
 ***
+
+## tom_test1 result
+
+dataset을 이용함.
+
+image size 224 x 224
+
+#### raw data set
+
+|type|red tomato|green tomato|tomato blossom end rot|total|
+|------|---|---|---|---|
+|raw|100|100|100|300|
+
+agumaentation total: 1109
+
+colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7dPsboRCw#scrollTo=yy0VAiw2Wbmw
+
+<p align = 'center'>
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/tom_test1/results.png?raw=true'
+       </p>
+
+<p align = 'center'>
+  <img src = 'https://user-images.githubusercontent.com/93086581/182602064-977bdc26-0c43-4cdf-900e-b2e632769cca.png'
+       </p>
+  동영상에 적용한 테스트 결과
+
+### 리뷰
+  학습은 이상적인 수치가 나왔음.
+  
+  분류결과도 비교적 정확.
+
+  학습시 라벨별 training set과 validation set 이미지 갯수의 비율을 8:2로 나눔.
+  
+  
+***
+  
+  
 
 ## pp_test1 result 
 
@@ -30,6 +66,7 @@ colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7d
   <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test1/result.png?raw=true'
        </p> 
 
+  
 tensorboard 링크
 https://tensorboard.dev/experiment/xi5gafkqSquJJQuyrzC1Lw/#scalars
   
@@ -42,7 +79,7 @@ https://tensorboard.dev/experiment/xi5gafkqSquJJQuyrzC1Lw/#scalars
 ### 리뷰
   
   #### 문제점
-1. 학습은 이상적인 수치가 나왔음. <br>
+1. 학습은 이상적인 수치가 나왔음. 
 2. 동영상에 적용했을때 pass와 check가 서로 반대로 표현되는등 원하는 결과가 출력되지 않음.
 3. 학습시 라벨별 training set과 validation set 비율을 나누지 않고 total 1331장의 이미지 갯수의 비율을 8:2로 나눔.
   
