@@ -44,9 +44,9 @@ https://tensorboard.dev/experiment/xi5gafkqSquJJQuyrzC1Lw/#scalars
   #### 문제점
 1. 학습은 이상적인 수치가 나왔음. <br>
 2. 동영상에 적용했을때 pass와 check가 서로 반대로 표현되는등 원하는 결과가 출력되지 않음.
-3. 학습시 라벨별 traing set과 validation set 비율을 나누지 않고 total 1331장의 이미지 갯수의 비율을 8:2로 나눔.
+3. 학습시 라벨별 training set과 validation set 비율을 나누지 않고 total 1331장의 이미지 갯수의 비율을 8:2로 나눔.
   
   #### 해결책
 1. batch를 1로 줄이고, epoch를 100으로 늘림 --> 그래프의 수렴을 명확히 하고 학습을 더 정확히하기 위함.
 2. 이미지 데이터셋을 늘림 --> 다각도로 보더라도 라벨이 정확히 나오도록 하기 위함.
-3. 각 라벨별 traing set과 validation set의 비율을 8:2로 나누고 각 라벨별 traing set과 validation set을 train_img_list와 val_img_list에 넣음. --> 학습의 정확도를 높이기 위해서.
+3. 각 라벨별 training set과 validation set의 비율을 8:2로 나누고 각 라벨별 training set과 validation set을 train_img_list와 val_img_list에 넣음. --> 학습의 정확도를 높이기 위해서.
