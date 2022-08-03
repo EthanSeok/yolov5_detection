@@ -18,9 +18,9 @@ image size 224 x 224
 
 #### raw data set
 
-|type|check|pass|rot|
-|------|---|---|---|
-|raw|173|246|103|
+|type|check|pass|rot|total|
+|------|---|---|---|---|
+|raw|173|246|103|540|
 
 agumentation total: 1331
 
