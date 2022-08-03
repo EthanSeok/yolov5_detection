@@ -12,6 +12,10 @@ yolo v5를 이용하여 토마토 및 파프리카의 완숙도 선별 모델을
 
 ## pp_test1 result 
 
+dataset2를 이용함.
+
+colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7dPsboRCw#scrollTo=yy0VAiw2Wbmw
+
 <p align = 'center'>
   <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test1/result.png?raw=true'
        </p> 
