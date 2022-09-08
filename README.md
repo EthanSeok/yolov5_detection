@@ -164,8 +164,8 @@ colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7d
 1. 학습은 이상적인 수치가 나왔음. 
 2. web cam에 적용했을때 pass와 check가 서로 반대로 표현되는등 원하는 결과가 출력되지 않음.
 3. 학습시 라벨별 training set과 validation set 비율을 나누지 않고 total 2037장의 이미지 갯수의 비율을 8:2로 나눔.
-4. batch를 1로 줄이고, epoch를 100으로 늘림 --> 그래프의 수렴을 명확히 하고 학습을 더 정확히하기 위함.
-5. batch 20 epoch 50일때 보다 학습결과는 좋지만 테스트결과는 더 안좋음.
+4. batch를 1로 줄이고, epoch를 100으로 늘림 --> 하나를 100번 학습시킴 따라서 학습이 더 안됨(오개념이 있었음)
+5. batch 20 epoch 50일때 보다 학습결과는 좋지만 테스트결과는 더 안좋음. --> batch 1로 학습시 당연한 결과.
   
   #### 해결책
 1. 너무 deep 하게 학습한 결과 테스트시 결과가 더 좋지 않아지는 것같다고 판단됨. --> batch를 늘리고 epoch은 100으로 다시 시도해 보겠음.
