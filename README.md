@@ -1,13 +1,14 @@
 # yolov5_detection_fruit 
 
 
-딥러닝 vision 입문기
+### About YOLO
+* “이전의 물체 감지 프레임워크는 2-stage method (region proposal stage 와 classification stage)이었지만, YOLO는 one stage (single shot) 통합 물체 감지 모델로 개발되었다.” 
 
-yolo v5를 이용하여 토마토 및 파프리카의 완숙도 선별 모델을 만들고자 한다.
 
-다음은 각 모델 테스트별 결과를 정리한 것이다.
+* “YOLO에서, 단일 CNN은 여러 bounding box와 클래스 확률을 동시에 예측할 수 있다. 'Single Shot Detector' SSD는 멀티스케일 학습을 위해 네트워크 내부의 다양한 수준의 피처 맵에서 앵커박스를 적용하여 객체를 매우 빠르고 정확하게 탐지하는 프레임워크이다.” 
 
-***
+<img src = 'https://user-images.githubusercontent.com/93086581/211190388-49078eed-97bc-4100-ac10-4515cf79f50d.jpg'>
+
 
 ## tom_test1 result
 
@@ -28,11 +29,11 @@ agumaentation total: 1109
 colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7dPsboRCw#scrollTo=yy0VAiw2Wbmw
 
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/tom_test1/results.png?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/tomato/tom_test1/results.png?raw=true'>
        </p>
 
 <p align = 'center'>
-  <img src = 'https://user-images.githubusercontent.com/93086581/182602064-977bdc26-0c43-4cdf-900e-b2e632769cca.png'
+  <img src = 'https://user-images.githubusercontent.com/93086581/182602064-977bdc26-0c43-4cdf-900e-b2e632769cca.png'>
        </p>
   동영상에 적용한 테스트 결과
 
@@ -67,7 +68,7 @@ agumentation total: 1331
 colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7dPsboRCw#scrollTo=yy0VAiw2Wbmw
 
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test1/result.png?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test1/result.png?raw=true'>
        </p> 
 
   
@@ -75,7 +76,7 @@ tensorboard 링크
 https://tensorboard.dev/experiment/xi5gafkqSquJJQuyrzC1Lw/#scalars
   
 <p align = 'center'>
-  <img src = 'https://user-images.githubusercontent.com/93086581/182566576-dabdcc59-6362-4f1c-b7c8-5b7b5eb16c7d.png'
+  <img src = 'https://user-images.githubusercontent.com/93086581/182566576-dabdcc59-6362-4f1c-b7c8-5b7b5eb16c7d.png'>
        </p>
     동영상에 적용한 테스트 결과 
   
@@ -104,7 +105,7 @@ batch 20 epoch 50
 #### dataset
   
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test3_colab/labels.jpg?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pepper/pp_test3_colab/labels.jpg?raw=true'>
        </p>
   
 augmentation total: 2037
@@ -112,14 +113,14 @@ augmentation total: 2037
 colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7dPsboRCw#scrollTo=yy0VAiw2Wbmw
   
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test3_colab/results.png?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pepper/pp_test3_colab/results.png?raw=true'>
        </p> 
   
 tensorboard 링크
 https://tensorboard.dev/experiment/v7R8RGqLRdmSniqyfyNwmw/#scalars
   
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test3_colab/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-08-06%20212550.png?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pepper/pp_test3_colab/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-08-06%20212550.png?raw=true'>
        </p> 
       
 web cam에 적용한 결과
@@ -147,7 +148,7 @@ batch 1 epoch 300
 #### dataset
 
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test3_local/labels.jpg?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pepper/pp_test3_local/labels.jpg?raw=true'>
        </p> 
 
 agumentation total: 2037
@@ -155,7 +156,7 @@ agumentation total: 2037
 colab 링크: https://colab.research.google.com/drive/1_AeNEQRcGnL5_m-uKQlX3vm7dPsboRCw#scrollTo=yy0VAiw2Wbmw
   
 <p align = 'center'>
-  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pp_test3_local/results.png?raw=true'
+  <img src = 'https://github.com/EthanSeok/yolov5_detection_fruit/blob/main/pepper/pp_test3_local/results.png?raw=true'>
        </p> 
 
 ### 리뷰
