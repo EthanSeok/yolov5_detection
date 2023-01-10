@@ -10,6 +10,12 @@
 <img src = 'https://user-images.githubusercontent.com/93086581/211190388-49078eed-97bc-4100-ac10-4515cf79f50d.jpg'>
 
 
+### YOLO v5
+* 직접 구득한 이미지 데이터 활용
+* 과일의 객체 인식(Detection)
+* Labelme를 이용한 클래스 어노테이션 - https://github.com/wkentaro/labelme
+* RoboFlow를 통해 josn 파일을 txt 파일로 변경 후 학습
+
 ## tom_test1 result
 
 dataset을 이용함.
